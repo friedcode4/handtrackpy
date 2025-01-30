@@ -17,10 +17,7 @@ success, img = cap.read()
  imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
  results = hands.process(imgRGB)
 
-    if results.multi_hands_landmarks:
-for handLms in results.multi_hands_landmarks:
-
- for id, lm in enumerate(handLms.landmark): h,w,c = img.shape
+for id, lm in enumerate(handLms.landmark): h,w,c = img.shape
 cx,cy = int(lm.x*w), int(lm.y*h)
 print( id, cx, cy)
 if id==0:
@@ -36,10 +33,9 @@ cv2.putText( img, str(int(fps)),(10,70), cv2.FONT_HERSEY_PLAIN, 3, (255,0,255),3
 cv2.imshow("image", img)
 if cv2.waitkey(1) & 0*FF == ord('q'):
                 
-            
  cap.release()
 cv2.destroyAllWindows()
                      
-            
+        //follow me on instagram: im_friedrich    
             
                      
