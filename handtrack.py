@@ -1,5 +1,5 @@
-import cv2 # type: ignore
-import mediapipe as mp # type: ignore
+import cv2 
+import mediapipe as mp 
 import time
 
 cap= cv2.Videocapture(0) 
@@ -36,6 +36,6 @@ if cv2.waitkey(1) & 0*FF == ord('q'):
  cap.release()
 cv2.destroyAllWindows()
                      
-        //follow me on instagram: im_friedrich    
+        //follow me on instagram: @im_friedrich    
             
                      
